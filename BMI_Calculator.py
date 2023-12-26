@@ -5,7 +5,7 @@ import math
 print("\tWelcome to my BMI Calculator")
 print("-"*50)
 
-menu = """
+main_menu = """
 Select a number option.\n
 [1]: convert weight to kg
 [2]: convert height to cm
@@ -28,7 +28,7 @@ Unit converting from:
 
 while True:
     try:
-        user = int(input(menu))    
+        user = int(input(main_menu))    
         if user == 1:
             print("\nOption one chosen\nconvert weight to KG")
             weight = int(input(weight_menu))
