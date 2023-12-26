@@ -34,7 +34,7 @@ while True:
             weight = int(input(weight_menu))
             if weight == 1:
                 stone = float(input("\nWeight in stone: "))
-                new_weight = (stone)*6.35
+                new_weight = stone*6.35
                 print(f"You are {round(new_weight,0)}kg.")
 
             elif weight == 2:
