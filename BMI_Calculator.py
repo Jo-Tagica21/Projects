@@ -28,8 +28,8 @@ Unit converting from:
 
 while True:
     try:
-        user = int(input(main_menu))    
-        if user == 1:
+        user_input = int(input(main_menu))    
+        if user_input == 1:
             print("\nOption one chosen\nconvert weight to KG")
             weight = int(input(weight_menu))
             if weight == 1:
@@ -43,11 +43,11 @@ while True:
                     print(f"You are {round(new_weight,0)}kg.")
 
             elif weight > 2:
-                    print("\nNumber out of range. return to main menu and try again.")
+                    print("\nNumber out of range. return to main main_menu and try again.")
     
-            elif user == 2:
-                print("\nOption 2 chosen\nconvert height to CM")
-                height = int(input(height_menu))
+        elif user_input == 2:
+            print("\nOption 2 chosen\nconvert height to CM")
+            height = int(input(height_menu))
             if height == 1:
                     inches = float(input("\nHeight in inches: "))
                     new_height = inches*2.54
@@ -64,9 +64,9 @@ while True:
                     print(f"You are {round(new_height,0)}cm")
 
             elif height > 3:
-                    print("\nNumber out of range. return to main menu and try again.")
+                print("\nNumber out of range. return to main main_menu and try again.")
 
-        elif user == 3:
+        elif user_input == 3:
             print("\nOption 3 chosen\nCalculate BMI.\n")
             weight = float(input("Weight in kg: "))
             height = float(input("Height in cm: "))
@@ -85,9 +85,13 @@ while True:
             elif bmi == 0 and bmi <= 18.5:
                     print("Classed as underweight")
 
-        elif user == 4:
+        elif user_input == 4:
             print("\nThank you for using my service.\nGoodbye.")
             break
+
+        elif user_input > 4:
+              print("\nNumber out of range. Try again.")
+              
 
     except ValueError:
         print("Invalid input. Try Again.")   
