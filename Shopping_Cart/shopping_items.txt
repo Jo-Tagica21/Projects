@@ -1,0 +1,4 @@
+Apple    ;1.25
+Avocado  ;1.05
+Almond   ;2.35
+Asparagus;1.03
